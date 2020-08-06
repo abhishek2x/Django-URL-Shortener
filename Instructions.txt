@@ -1,0 +1,36 @@
+Hi Dear,
+
+Hope you are safe and fine
+
+Thanks for applying to the Product Developer - Intern position at SurveySparrow.
+
+As the first phase of the selection process, we would like you to do an assignment.
+
+Develop a mock of bit.ly (https://bitly.com/).
+
+Bitly is an application to help you with the short URLs.
+
+Let's say you have a URL. You need to send that URL in an SMS. You will be having a character limit for SMS. So it would be nice to shorten your URL to something smaller.
+
+URL: https://surveysparrow.com/features/create-a-survey/
+Shortened URL: https://bit.ly/34uqMpV
+
+Requirements are,
+1. Develop an ability to shorten URL.
+
+
+Nice to have,
+1. User should be able to login to his account
+2. Users can generate multiple short URLs.
+3. Once the user logs in, he should be able to see the list of short URLs he has generated.
+
+Must do,
+1. Push your code to a repository in Github.
+2. Host your application somewhere(Heroku, Netlify or something that you know) and then it should be accessible through the browser by a URL.
+
+
+Once you have finished your application, with the Github repo URL and your application URL send us an email to divya@surveysparrow.com, cmb@surveysparrow.com.
+
+The assignment should be submitted before 20th August 2020.
+
+Happy Coding!
