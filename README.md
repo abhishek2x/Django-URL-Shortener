@@ -1,5 +1,3 @@
-# Django-URL-Shortener
-
 # URL SHORTENER
 
 >##  Keep it Short and Consistent 
