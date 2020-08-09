@@ -43,7 +43,7 @@ Let's say you have a URL. You need to send that URL in an SMS. You will be havin
 
 ***
 
-# Images
+# Images from the Application
 
 ## Login
 <img src="./readme_images/login.png">
