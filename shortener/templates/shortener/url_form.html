@@ -1,0 +1,29 @@
+{% include 'main.html' %}
+
+{% block content %}
+
+    <div class="container text-center">
+<h1 class="m-3 p-3">URL Creater</h1>
+
+<form action="{% url 'generate' %}" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <input type="url" name="original" class="form-control" placeholder="Original URL">
+    </div>
+    <div class="form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text pr-4">http://localhost:8000/l/</div>
+            <input type="text" name="short" class="form-control" placeholder="Short Char (6 chars)" maxlength="6"
+                id="short">
+
+        </div>
+        <p id="shorthelp" class="form-text text-muted">Leave It Blank To generate randomly.</p>
+        <p id="shorthelp" class="text-muted">(All the generated URL's will be available on your dashboard)</p>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary px-4" value="Generate">
+    </div>
+</form>
+
+</div>
+{% endblock %}

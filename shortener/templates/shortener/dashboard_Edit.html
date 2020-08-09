@@ -1,0 +1,46 @@
+{% include 'main.html' %}
+
+{% block content %}
+{#    {% if Person.user == request.user %}#}
+        <div class="row mt-5">
+    <div class="col-md-12 d-flex align-items-center justify-content-center">
+        <div class="h-100 ">
+            <div class="text-center h-100">
+                <div class="user_card p-5">
+                    <div class="d-flex text-center">
+                        <h3 id="form-title">Dashboard Edit</h3>
+                    </div>
+                    <div class="d-flex justify-content-center form_container">
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text pr-5">Name</span> {{ form.name }}
+                                </div>
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text pr-5">Phone</span> {{ form.phone }}
+                                </div>
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text pr-5">Profile Pic</span>
+                                </div>
+                                 {{ form.profile_pic }}
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <input class="btn login_btn" type="submit" value="Save">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{#    {% else %}#}
+{#    <h3>You can't edit someone else's profile</h3>#}
+{#    {% endif %}#}
+{% endblock %}

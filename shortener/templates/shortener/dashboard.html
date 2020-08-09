@@ -1,0 +1,58 @@
+{% include 'main.html' %}
+
+{% block content %}
+<style>
+    img {
+        border-radius: 50%;
+    }
+</style>
+<div class="text-center">
+    <h1 class="pt-3 pb-3">Dashboard</h1>
+</div>
+<div class="row m-3">
+    <div class="col-md-7 p-4 offset-1">
+        <h4 class="text-dark"> User: {{ Person.user }} </h4><br>
+        <h4 class="text-dark"> Name: {{ Person.name }} </h4><br>
+        <h4 class="text-dark"> Phone: {{ Person.phone }} </h4><br>
+        <h4 class="text-dark"> Joined: {{ Person.date }} </h4><br>
+        <div class="text-left">
+            <a href="{% url 'edit' request.user.id %}" class="btn btn-lg btn-info">
+                Edit
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 mt-3">
+        <img src="/images/{{Person.profile_pic}}" alt="{{Person.name}}'s Image" height="240px" width="240px">
+    </div>
+</div>
+
+
+<hr>
+
+<div class="text-center">
+    <h1 class="pt-3 pb-3">Your URLS</h1>
+</div>
+
+<div class="container text-center mb-4">
+    <table class="table table-hover table-bordered mb-5">
+        <thead>
+            <tr>
+                <th scope="col" style="color: white">Original URL</th>
+                <th scope="col" style="color: white">New URL</th>
+                <th scope="col" style="color: white">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for element in myurls %}
+            <tr>
+                <td style="text-decoration: underline">{{ element.long_url }}</td>
+                <td><a href="http://127.0.0.1:8000/l/{{ element.short_url }}" style="color: #077607; text-decoration: underline">http://127.0.0.1:8000/l/{{ element.short_url }}</a>
+                </td>
+                <td>{{ element.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

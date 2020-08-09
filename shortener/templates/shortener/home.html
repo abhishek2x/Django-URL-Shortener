@@ -1,0 +1,49 @@
+{% load static %}
+{% include 'main.html' %}
+
+{% block content %}
+
+{% if not error %}
+
+<div  class="d-flex align-items-center">
+    <div class="row align-items-center p-3">
+        <div class="col-md-6">
+            <h1 class="display-3 text-dark">
+                URL SHORTENER
+            </h1>
+            <hr>
+            <h1 class="text-muted">
+                Keep it Short and Consistent
+            </h1>
+            <h4 class="text-dark mt-5">
+                Simple and fast URL shortener! This will allows to reduce long links from Facebook, YouTube,
+                Twitter, Linked In and top sites on the Internet, just paste the long URL and click the Shorten URL button.
+            </h4>
+            <hr>
+            <div class="text-center">
+                <button class="btn btn-success btn-lg"><a class="text-white" href="{% url 'generate' %}">Shorten a URL</a></button>
+            </div>
+        </div>
+        <div class="col-md-6 img-fluid mt-3">
+            <img src="{% static 'images/link.svg' %}" alt="Image" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+{% else %}
+
+<div class="container shadow p-4">
+    <div class="row">
+        <div class="col-md-6 text-center mt-5">
+            <h1 class="text-muted">The URL you are looking for doesn't exist</h1>
+            <a href="{% url 'generate' %}" class="m-5 btn-lg btn btn-primary">Shorten A Url</a>
+        </div>
+        <div class="col-md-6 img-fluid mt-5">
+            <img class="img-fluid" src="{% static 'images/not_found.svg' %}" alt="Image">
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
