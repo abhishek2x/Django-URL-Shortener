@@ -6,7 +6,7 @@
 
 ### A Brief Introduction
 
-***Simple and fast URL shortener! This will allows to reduce long links from Facebook, YouTube, Twitter, Linked In and top sites on the Internet, just paste the long URL and click the Shorten URL button.***
+***Simple and fast URL shortener! This will allow to reduce long links from Facebook, YouTube, Twitter, Linked In and top sites on the Internet, just paste the long URL and click the Shorten URL button.***
 <br/>
 Let's say you have a URL. You need to send that URL in an SMS. You will be having a character limit for SMS. So it would be nice to shorten your URL to something smaller. 
 
