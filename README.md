@@ -64,7 +64,7 @@ Let's say you have a URL. You need to send that URL in an SMS. You will be havin
 
 # Link to the Live Demo
 
-**linkzz website url  ->** <a href="https://linkzz.herokuapp.com/">Live Demo</a>
+**linkzz website url  ->** <a target="_blank" href="https://linkzz.herokuapp.com/">Live Demo</a>
 
 ***
 
